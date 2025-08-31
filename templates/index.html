@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<div class="text-center">
+  <h1 class="display-4">Добро пожаловать!</h1>
+  <p class="lead">Это мой первый Flask сайт 🚀</p>
+  <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg mt-3">Связаться с нами</a>
+</div>
+{% endblock %}

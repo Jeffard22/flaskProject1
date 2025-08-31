@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+    <h2>Свяжитесь со мной</h2>
+
+    {% if success %}
+        <p style="color: green;">✅ Спасибо, сообщение отправлено!</p>
+    {% endif %}
+
+    <form method="POST">
+        <label>Имя:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Сообщение:</label><br>
+        <textarea name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Отправить</button>
+    </form>
+{% endblock %}
