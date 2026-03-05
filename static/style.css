@@ -1,19 +1,21 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 15;
-    padding: 20;
-    background: #f4f4f9;
-    color: #333;
-}
-
 header {
-    background: #4c56af;
+    background: #8a95ea;
     color: white;
     padding: 15px;
 }
 
 header h1 {
     margin: 0;
+}
+
+body {
+
+ font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* робимо текст світлим */
+    background: url("/static/images/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
 nav a {
